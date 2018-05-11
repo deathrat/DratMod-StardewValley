@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace DratMod
 {
-    public class Class1
+    public class DratModConfig
     {
+        public bool CoffeeBeanStoreEnabled { get; set; } = true;
+        public int CoffeeBeanPrice { get; set; } = 7000;
     }
 }
