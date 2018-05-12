@@ -16,11 +16,14 @@ namespace DratMod
             _subMods = new List<IDratSubMod>();
 
             LoadSubMods(helper, _subMods);
+
+            Monitor.Log("[DratMod] Main mod loaded");
         }
 
         void LoadSubMods(IModHelper helper, List<IDratSubMod> subMods)
         {
             _subMods.Add(new DratModCoffeeStore());
+            _subMods.Add(new DratModArtifactCart());
 
             foreach (var subMod in subMods)
             {
@@ -31,6 +34,8 @@ namespace DratMod
                     helper.Content.AssetEditors.Add((IAssetEditor)subMod);
                 }
             }
+
+            Monitor.Log("[DratMod] Submods loaded");
         }
     }
 }

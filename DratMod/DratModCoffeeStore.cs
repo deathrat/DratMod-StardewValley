@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewValley;
@@ -25,6 +22,8 @@ namespace DratMod
 
             _shopItems = new Dictionary<Item, int[]>();
             _shopItems.Add(new StardewValley.Object(433, int.MaxValue, false, parentMod.Config.CoffeeBeanPrice, 0), new[] { parentMod.Config.CoffeeBeanPrice, int.MaxValue });
+
+            parentMod.Monitor.Log("[DratMod.CoffeeShop] Submod loaded.");
         }
 
 

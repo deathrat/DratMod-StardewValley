@@ -10,5 +10,10 @@ namespace DratMod
     {
         public bool CoffeeBeanStoreEnabled { get; set; } = true;
         public int CoffeeBeanPrice { get; set; } = 7000;
+
+        public bool ArtifactSubmodEnabled { get; set; } = true;
+        public int ArtifactThreshold { get; set; } = 10;
+        public int ArtifactPrice { get; set; } = 7500;
+        
     }
 }

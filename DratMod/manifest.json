@@ -1,7 +1,7 @@
 ﻿{
   "Name": "DratMod",
   "Author": "deathrat",
-  "Version": "0.1",
+  "Version": "0.2",
   "Description": "Mod adding a variety of options to improve gameplay",
   "EntryDll": "DratMod.dll",
   "MinimumApiVersion": "2.0",
